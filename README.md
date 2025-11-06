@@ -7,7 +7,7 @@
 ## Build & Run (Docker)
 ```bash
 # Build image
-docker build -t patient-frontend:1 ./frontend
+docker build -t patient-frontend:1 .
 
 # Run (detached)
 docker run -d --name patient-frontend   --restart unless-stopped   -p 8081:80   -e API_BASE=http://localhost:8080   patient-frontend:1
