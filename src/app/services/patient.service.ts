@@ -6,7 +6,7 @@ import { Patient, PageResp } from '../models/patient';
 @Injectable({ providedIn: 'root' })
 export class PatientService {
   private readonly base =
-    (window as any).__env?.API_BASE || 'http://localhost:8080';
+    (window as any).__env?.API_BASE || 'http://patientbackend.isaachahn.my.id';
 
   constructor(private readonly http: HttpClient) {}
 
