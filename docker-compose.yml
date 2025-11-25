@@ -6,5 +6,5 @@ services:
     ports:
       - "10080:80"           # host:container
     environment:
-      API_BASE: "http://localhost:10081"   # your backend’s local host:port
+      API_BASE: "https://patientbackend.isaachahn.my.id"   # your backend’s local host:port
     restart: unless-stopped
