@@ -10,7 +10,7 @@
 docker build -t patient-frontend:1 .
 
 # Run (detached)
-docker run -d --name patient-frontend   --restart unless-stopped   -p 8081:80   -e API_BASE=http://localhost:8080   patient-frontend:1
+docker run -d --name patient-frontend   --restart unless-stopped   -p 8081:80   -e API_BASE=https://patientbackend.isaachahn.my.id   patient-frontend:1
 
 # Logs
 docker logs -f patient-frontend
@@ -19,4 +19,4 @@ docker logs -f patient-frontend
 ```
 
 ## Environment
-- `API_BASE` — backend base URL (e.g. `http://localhost:8080`).
+- `API_BASE` — backend base URL (e.g. `https://patientbackend.isaachahn.my.id`).

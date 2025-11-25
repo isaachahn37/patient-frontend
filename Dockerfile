@@ -22,7 +22,7 @@ COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY src/assets/config.js ./assets/config.js
 COPY scripts/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-ENV API_BASE=http://localhost:8080
+ENV API_BASE=https://patientbackend.isaachahn.my.id
 EXPOSE 80
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["nginx","-g","daemon off;"]
